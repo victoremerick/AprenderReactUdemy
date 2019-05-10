@@ -25,7 +25,7 @@ class User extends Component {
         <div>
             Foto: <img src={this.props.name}/>
         </div>
-        <button onClick={changeState}>Nome Completo</button>
+        <button onClick={this.changeState}>Nome Completo</button>
       </div>
     );
   }
