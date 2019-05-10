@@ -7,6 +7,7 @@ class User extends Component {
     this.state={
       name: "Victor"
     }
+    this.changeState = this.changeState.bind(this);
   }
 
   changeState(){
