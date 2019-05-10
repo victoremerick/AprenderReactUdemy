@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import User from './User';
+import Formulario from './Formulario'
 import photo from './logo.svg';
 import { tsConstructorType } from '@babel/types';
 
@@ -17,6 +18,7 @@ class App extends Component {
           </p>
           <p>User</p>
           <User name="Victor" photo={photo}></User>
+          <Formulario></Formulario>
         </header>
       </div>
     );
