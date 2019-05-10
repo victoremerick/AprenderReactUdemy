@@ -32,3 +32,5 @@ class Formulario extends Component{
         );
     }
 }
+
+export default Formulario;
