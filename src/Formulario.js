@@ -14,7 +14,7 @@ class Formulario extends Component{
 
     onChangeEvent(event){
         let target = event.target;
-        let index = targe.name;
+        let index = target.name;
         this.setState({
             [index]: target.value
         });
