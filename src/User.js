@@ -20,10 +20,10 @@ class User extends Component {
     return (
       <div>
         <div>
-            Nome: {this.props.name}
+            Nome: {this.state.name}
         </div>
         <div>
-            Foto: <img src={this.props.name}/>
+            Foto: <img src={this.props.photo}/>
         </div>
         <button onClick={this.changeState}>Nome Completo</button>
       </div>
