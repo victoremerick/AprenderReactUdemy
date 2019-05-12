@@ -1,25 +1,20 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import {Link, Route} from 'react-router-dom'
 import './App.css';
-import User from './User';
-import Formulario from './Formulario'
-import photo from './logo.svg';
-import { tsConstructorType } from '@babel/types';
+import routesConfig from './routesConfig';
 
 class App extends Component {
 
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-          Aprendendo React
-          </p>
-          <p>User</p>
-          <User name="Victor" photo={photo}></User>
-          <Formulario></Formulario>
-        </header>
+        <div>
+          <Link to="/">Home</Link>
+          <Link to="/contato">Contato</Link>
+        </div>
+        {routesConfig.map((value, key)=>{
+          return <Route key={key} path={value.path} component={value.component} exact={value.exact}></Route>
+        })}
       </div>
     );
   }
